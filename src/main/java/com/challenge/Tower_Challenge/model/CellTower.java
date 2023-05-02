@@ -1,5 +1,8 @@
 package com.challenge.Tower_Challenge.model;
 
+/**
+ * Represents a cell tower with its properties.
+ */
 public class CellTower {
     private int tower_id;
     private String operator;
@@ -10,6 +13,11 @@ public class CellTower {
     private double longitude;
     private String technology;
 
+/*
+* Get Tower properties
+*
+* @return their values
+* */
 
     public int getTower_id() {
         return tower_id;

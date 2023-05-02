@@ -17,6 +17,18 @@ public class CellTowerController {
         this.cellTowerService = cellTowerService;
     }
 
+    /**
+     * Get filtered cell tower data.
+     *
+     * Retrieve cell tower data filtered by tower id, network operator, technology, and tower type.
+     *
+     * @param towerId        Filter by tower id (optional)
+     * @param networkOperator Filter by network operator (optional)
+     * @param technology     Filter by technology (optional)
+     * @param towerType      Filter by tower type (optional)
+     * @return A list of cell towers that match the filter criteria
+     */
+
     @GetMapping("/challenge/towers")
     public List<CellTower> getCellTowers(
             @RequestParam(value = "towerid", required = false) Integer towerId,
